@@ -1,0 +1,206 @@
+body {
+	font-family:'Dancing Script', cursive;
+	background-color: #02010a;
+	}
+.contenido {
+	width: 900px;
+	margin: 0 auto;
+}
+
+figure img {
+	width: 75%;
+	
+}
+header, section, footer{
+	display:flex;
+	flex-direction: row;
+	
+}
+.active {
+	text-shadow: 2px 2px 2px #02010a;
+}
+header {
+	padding: 1vh 1vw;
+	border-radius: 10px 10px 0 0;
+	background-color: #5b7989;
+	margin: 0 auto;
+	animation: miAnimacion 2s;
+}
+@-webkit-keyframes miAnimacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+.titulo > h1{
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	flex-grow: 2;
+	margin: 1px;
+	text-align: center;
+}
+
+ .menu{
+	top: 1vh;
+	flex-grow: 1;
+	text-align: right;
+}
+.menu ul{
+	text-decoration: none;
+	list-style: none;
+	text-align: right;
+	
+}
+.menu li {
+	display: inline;
+}
+
+.menu ul li a {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: white;
+	padding: 1vw;
+	margin: 1px;
+}
+#i-central {
+	background-color: #82c3a6;
+	width: 100%;
+}
+
+footer {
+	background-color: #C6d5c5;
+	border-radius:0 0 10px 10px;
+	justify-content: center;
+	width: 100;
+}
+
+#imagen-1 , #imagen-2, #imagen-3{
+	margin: 1em;
+	text-align: center;
+	width: 100%;
+}
+figcaption{
+	font-size: 2vw;
+}
+.seccion-2{
+	width: 100%;
+	background-color: #D5C75f;
+	border: solid 1px;
+}
+.mi,.paisajes, .retratos {
+	box-shadow: 2px 2px 2px  2px #02010a;
+	border: 2px solid  #02010a;
+}
+
+#imagen-2>a>img:hover {
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px  2px #82c3a6;
+	border: 2px solid #82c3a6;
+}
+#imagen-3>a>img:hover {
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px  2px #82c3a6;
+	border: 2px solid #82c3a6;
+}
+
+.contacto, .termino, .redes-sociales, .derechos {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 2vw;
+	margin: 1vw;
+	flex-grow: 1;
+	width: 100%;
+}
+/* html paisajes */
+
+.seccion-paisajes, .seccion-retratos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #D5C75f;
+	
+}
+
+#imagen-1p , #imagen-2p, #imagen-3p, #imagen-4p, #imagen-5p, #imagen-6p{
+	margin: 1vw;
+	text-align: center;
+	width: 30%;
+}
+.pa1 {
+	filter: blur(10px);
+}
+.pa2, .pa4, .pa6 {
+	filter: grayscale(100%);
+}
+.pa3{
+	filter: sepia(90%);
+}
+/* home movil*/
+
+@media (max-width: 900px){
+	.contenido {
+	width: 100%;
+	margin: 0 auto;
+}
+
+	figure img {
+	width: 80%;
+}
+	header, section, footer{
+	display:flex;
+	flex-direction: row;
+		flex-wrap: wrap;
+}
+	.titulo > h1{
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	font-size: 10vw;
+	margin: 1px;
+	text-align: center;
+}
+	 .menu{
+	text-align: center;
+}
+	.menu ul{
+	text-align: center;
+	
+}
+	.menu ul li a {
+	font-size: 5vw;
+	text-decoration: none;
+	color: white;
+	padding: 1vw;
+	margin: 8px;
+	text-align: center;
+}
+	figcaption{
+	font-size: 3vw;
+}
+	.contacto, .termino, .redes-sociales, .derechos {
+	padding-left: 3vw;
+	margin: 1vw;
+	width: 100%;
+}
+	/* paisajes movil */
+	
+	.seccion-paisajes{
+	flex-direction: column;
+	width:100%;
+	
+}
+	#imagen-1p , #imagen-2p, #imagen-3p, #imagen-4p, #imagen-5p, #imagen-6p{
+	margin: 2vw;
+	text-align: center;
+	width:100%;
+}
+}
+
+
